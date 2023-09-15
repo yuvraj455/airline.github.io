@@ -1,0 +1,109 @@
+/* Default styles for all screens */
+body {
+    background: url(../images/aeroplane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-brand {
+    font-family: Paytone One;
+}
+
+a {
+    color: white;
+}
+
+.tabshead {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+.tab-content {
+    color: white;
+}
+
+#second {
+    margin-top: 11%;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px 3px #131313;
+    background-color: rgba(90, 0, 0, 0.3);
+}
+
+.drop {
+    color: black;
+    width: 30%;
+    height: 40px;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    margin-right: 1.2%;
+    margin-left: 1.2%;
+}
+
+.lab {
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#content {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    padding-top: 10%;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                 0px 8px 13px rgba(0, 0, 0, 0.1),
+                 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 4em;
+    font-family: Pacifico;
+    word-spacing: 15px;
+    color: white;
+}
+
+#flightsButton {
+    background-color: rgba(150, 0, 0, 0.7);
+    padding: 9.8px;
+    border: none;
+    width: 170px;
+    font-weight: bold;
+}
+
+.radio {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  
+  .radio input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+/* Media Query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+   
+    #content {
+        padding-top: 5%;
+        /* Adjust padding for smaller screens */
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        /* Adjust font size for smaller screens */
+    }
+    
+    #flightsButton {
+        width: 120px;
+        /* Adjust button width for smaller screens */
+    }
+    
+}
+
+
+

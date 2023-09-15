@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="yuvraj jindal" />
+        <meta name="description" content="wireframe for an airline website home page" />
+        <title>PY Airlines</title>
+        <link rel="shortcut icon" href="images/logo.png" type="image/X-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Paytone+One" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+    </head>
+
+    <body>
+        <!--NavBar-->
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="#" class="navbar-brand"><i class="fas fa-plane"></i> PY AIRLINES</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#"><strong>Home</strong></a></li>
+              <li><a href="#"><strong>About</strong></a></li>
+              <li><a href="#"><strong>Contact Us</strong></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" data-toggle="modal" data-target="#signup"><strong>Sign up </strong><i class="fas fa-user-plus"></i></a></li>
+              <li><a href="#" data-toggle="modal" data-target="#login"><strong>Login </strong><i class="fas fa-user"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--NavBar End-->
+
+      <!--Heading-->
+            <div id="content">
+              <h1>Travel The World!</h1>
+            </div>
+      <!--Heading End-->
+
+      <!--Tabs-->
+      <div class="container" id="second">
+        <!--Tabs Headings-->
+        <ul class="nav nav-tabs">
+          <li class="active"><a class="tabshead" data-toggle="tab" href="#"><i class="fas fa-plane"></i> Flights</a></li>
+          <li><a class="tabshead" data-toggle="tab" href="#"><i class="far fa-address-book"></i> My Bookings</a></li>
+          <li><a class="tabshead" data-toggle="tab" href="#"><i class="far fa-clock"></i> Flight Status</a></li>
+        </ul>
+        <!--Tabs Headings End-->
+
+        <!--Tabs Content-->
+        <div class="tab-content">
+          <!--Tab Content Flight-->
+          <div id="home" class="tab-pane fade in active">
+            <h3 class="lab">Flights</h3>
+            
+            <form action="#" method="#"> 
+              <div class="radio-options">  
+              <label class="radio-inline">
+                  <input type="radio" name="trip-type" value="one-way"> One-way
+              </label>
+              <label class="radio-inline">
+                  <input type="radio" name="trip-type" value="round-trip"> Round trip
+              </label>
+            
+          </div>
+              <select name="origin" class="drop" id="ori">
+              <option value="Origin">Origin</option>
+              <option value="yyz">Pearson International Airport(YYZ)</option>
+              <option value="Delhi">New Delhi(DEL)</option>
+              <option value="LAX">Los Angeles International Airport(LAX)</option>
+              <option value="LHR">Heathrow Airport(LHR)</option>
+              </select>
+
+              <i class="fas fa-exchange-alt"></i>
+
+              <select name="destination" class="drop" id="dest">
+                <option value="Destination">Destination</option>
+                <option value="yyz">Pearson International Airport(YYZ)</option>
+                <option value="Delhi">New Delhi(DEL)</option>
+                <option value="LAX">Los Angeles International Airport(LAX)</option>
+                <option value="LHR">Heathrow Airport(LHR)</option>
+              </select>
+
+              <input type="number" class="drop" name="passengers" step="1" min="1" max="10" placeholder="Number Of Passengers">
+              <label class="lab">Departure:</label>
+              <input type="date" name="depart" class="drop" id="depart">
+              <label class="lab">Return:</label>
+              <input type="date" name="return" class="drop" id="return">
+              <input type="submit" name="submit" value="Search Flights" id="flightsButton">
+            </form>
+          </div>
+          <!--Tab Content Flight End-->
+        </div>
+        <!--Tab Contents End-->  
+    </div>
+  <!--Tabs End-->
+
+    </body>
+</html>
